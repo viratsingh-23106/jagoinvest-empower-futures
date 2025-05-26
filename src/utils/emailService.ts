@@ -2,12 +2,12 @@
 import emailjs from '@emailjs/browser';
 
 // EmailJS Configuration
-const EMAILJS_SERVICE_ID = 'your_service_id'; // Replace with your EmailJS service ID
-const EMAILJS_PUBLIC_KEY = 'your_public_key'; // Replace with your EmailJS public key
+const EMAILJS_SERVICE_ID = 'service_knq76rq'; // Replace with your EmailJS service ID
+const EMAILJS_PUBLIC_KEY = '2cTUbFj0ARSV9gu8b'; // Replace with your EmailJS public key
 
 // Template IDs
-const VOLUNTEER_TEMPLATE_ID = 'volunteer_template'; // Replace with your volunteer template ID
-const PARTNERSHIP_TEMPLATE_ID = 'partnership_template'; // Replace with your partnership template ID
+const VOLUNTEER_TEMPLATE_ID = 'template_9hp9nok'; // Replace with your volunteer template ID
+const PARTNERSHIP_TEMPLATE_ID = 'template_sblozin'; // Replace with your partnership template ID
 
 // Initialize EmailJS
 emailjs.init(EMAILJS_PUBLIC_KEY);
