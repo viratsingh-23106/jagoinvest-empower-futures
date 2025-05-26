@@ -39,7 +39,7 @@ export interface PartnershipFormData {
 
 export const sendVolunteerApplication = async (formData: VolunteerFormData): Promise<void> => {
   const templateParams = {
-    to_email: 'admin@jagoinvesterjagoforum.org', // Replace with admin email
+    to_email: 'vs8009423@gmail.com', // Replace with admin email
     from_name: formData.name,
     from_email: formData.email,
     phone: formData.phone,
@@ -62,7 +62,7 @@ export const sendVolunteerApplication = async (formData: VolunteerFormData): Pro
 
 export const sendPartnershipApplication = async (formData: PartnershipFormData): Promise<void> => {
   const templateParams = {
-    to_email: 'admin@jagoinvesterjagoforum.org', // Replace with admin email
+    to_email: 'vs8009423@gmail.com', // Replace with admin email
     organization_name: formData.organizationName,
     contact_person: formData.contactPerson,
     from_email: formData.email,
