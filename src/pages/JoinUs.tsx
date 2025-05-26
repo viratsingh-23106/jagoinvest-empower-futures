@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -19,6 +18,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { sendPartnershipApplication } from "@/utils/emailService";
 
 const JoinUs = () => {
   const [formData, setFormData] = useState({
@@ -35,6 +35,7 @@ const JoinUs = () => {
     expectations: ""
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -51,25 +52,42 @@ const JoinUs = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Partnership Request Submitted!",
-      description: "Thank you for your interest. Our team will review your application and get back to you soon.",
-    });
-    setFormData({
-      organizationName: "",
-      contactPerson: "",
-      email: "",
-      phone: "",
-      organizationType: "",
-      location: "",
-      website: "",
-      description: "",
-      partnershipType: "",
-      previousWork: "",
-      expectations: ""
-    });
+    setIsSubmitting(true);
+
+    try {
+      await sendPartnershipApplication(formData);
+      
+      toast({
+        title: "Partnership Request Submitted!",
+        description: "Thank you for your interest. Our team will review your application and get back to you soon.",
+      });
+
+      // Reset form
+      setFormData({
+        organizationName: "",
+        contactPerson: "",
+        email: "",
+        phone: "",
+        organizationType: "",
+        location: "",
+        website: "",
+        description: "",
+        partnershipType: "",
+        previousWork: "",
+        expectations: ""
+      });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast({
+        title: "Submission Failed",
+        description: "There was an error submitting your application. Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const partnershipTypes = [
@@ -382,8 +400,13 @@ const JoinUs = () => {
                   />
                 </div>
                 
-                <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700">
-                  Submit Partnership Request
+                <Button 
+                  type="submit" 
+                  size="lg" 
+                  className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Submitting..." : "Submit Partnership Request"}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </form>
