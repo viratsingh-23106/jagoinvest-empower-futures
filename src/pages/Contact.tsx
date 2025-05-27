@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -18,13 +17,15 @@ import {
   Facebook,
   Twitter,
   Linkedin,
-  Instagram
+  Instagram,
+  Loader2
 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { sendContactMessage, ContactFormData } from "@/utils/emailService";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
     phone: "",
@@ -32,6 +33,7 @@ const Contact = () => {
     category: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const { toast } = useToast();
 
@@ -49,20 +51,34 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you within 24 hours.",
-    });
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      category: "",
-      message: ""
-    });
+    setIsSubmitting(true);
+
+    try {
+      await sendContactMessage(formData);
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Thank you for contacting us. We'll get back to you within 24 hours.",
+      });
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        category: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error('Contact form submission error:', error);
+      toast({
+        title: "Submission Failed",
+        description: "There was an error sending your message. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -225,6 +241,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       placeholder="Enter your full name"
+                      disabled={isSubmitting}
                     />
                   </div>
                   
@@ -238,6 +255,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       placeholder="Enter your email"
+                      disabled={isSubmitting}
                     />
                   </div>
                   
@@ -249,12 +267,17 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       placeholder="Enter your phone number"
+                      disabled={isSubmitting}
                     />
                   </div>
                   
                   <div className="space-y-2">
                     <Label htmlFor="category">Department</Label>
-                    <Select value={formData.category} onValueChange={(value) => handleSelectChange("category", value)}>
+                    <Select 
+                      value={formData.category} 
+                      onValueChange={(value) => handleSelectChange("category", value)}
+                      disabled={isSubmitting}
+                    >
                       <SelectTrigger>
                         <SelectValue placeholder="Select department" />
                       </SelectTrigger>
@@ -278,6 +301,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     placeholder="Brief subject of your message"
+                    disabled={isSubmitting}
                   />
                 </div>
                 
@@ -291,12 +315,27 @@ const Contact = () => {
                     required
                     placeholder="Please provide details about your inquiry..."
                     rows={5}
+                    disabled={isSubmitting}
                   />
                 </div>
                 
-                <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700">
-                  Send Message
-                  <Send className="ml-2 h-5 w-5" />
+                <Button 
+                  type="submit" 
+                  size="lg" 
+                  className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      Send Message
+                      <Send className="ml-2 h-5 w-5" />
+                    </>
+                  )}
                 </Button>
               </form>
             </CardContent>

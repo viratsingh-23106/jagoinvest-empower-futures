@@ -1,4 +1,3 @@
-
 import emailjs from '@emailjs/browser';
 
 // EmailJS Configuration
@@ -8,6 +7,7 @@ const EMAILJS_PUBLIC_KEY = '2cTUbFj0ARSV9gu8b'; // Replace with your EmailJS pub
 // Template IDs
 const VOLUNTEER_TEMPLATE_ID = 'template_9hp9nok'; // Replace with your volunteer template ID
 const PARTNERSHIP_TEMPLATE_ID = 'template_sblozin'; // Replace with your partnership template ID
+const CONTACT_TEMPLATE_ID = 'template_contact123'; // Replace with your contact template ID
 
 // Initialize EmailJS
 emailjs.init(EMAILJS_PUBLIC_KEY);
@@ -35,6 +35,15 @@ export interface PartnershipFormData {
   partnershipType: string;
   previousWork: string;
   expectations: string;
+}
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  category: string;
+  message: string;
 }
 
 export const sendVolunteerApplication = async (formData: VolunteerFormData): Promise<void> => {
@@ -83,5 +92,26 @@ export const sendPartnershipApplication = async (formData: PartnershipFormData):
   } catch (error) {
     console.error('EmailJS Error:', error);
     throw new Error('Failed to send partnership application');
+  }
+};
+
+export const sendContactMessage = async (formData: ContactFormData): Promise<void> => {
+  const templateParams = {
+    to_email: 'vs8009423@gmail.com', // Replace with admin email
+    from_name: formData.name,
+    from_email: formData.email,
+    phone: formData.phone,
+    subject: formData.subject,
+    category: formData.category,
+    message: formData.message,
+    submission_date: new Date().toLocaleString(),
+    form_type: 'Contact Form'
+  };
+
+  try {
+    await emailjs.send(EMAILJS_SERVICE_ID, CONTACT_TEMPLATE_ID, templateParams);
+  } catch (error) {
+    console.error('EmailJS Error:', error);
+    throw new Error('Failed to send contact message');
   }
 };
