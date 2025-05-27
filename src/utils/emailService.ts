@@ -7,7 +7,7 @@ const EMAILJS_PUBLIC_KEY = '2cTUbFj0ARSV9gu8b'; // Replace with your EmailJS pub
 // Template IDs
 const VOLUNTEER_TEMPLATE_ID = 'template_9hp9nok'; // Replace with your volunteer template ID
 const PARTNERSHIP_TEMPLATE_ID = 'template_sblozin'; // Replace with your partnership template ID
-const CONTACT_TEMPLATE_ID = 'template_contact123'; // Replace with your contact template ID
+const CONTACT_TEMPLATE_ID = 'template_9hp9nok'; // Replace with your contact template ID
 
 // Initialize EmailJS
 emailjs.init(EMAILJS_PUBLIC_KEY);
