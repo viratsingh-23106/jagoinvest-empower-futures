@@ -28,7 +28,7 @@ const ContactMap = () => {
     }).addTo(map);
 
     // Add marker for the office location
-    const marker = L.marker([28.6315, 77.2167]).addTo(map);
+    const marker = L.marker([26.7745,809221]).addTo(map);
     marker.bindPopup(`
       <div class="text-center">
         <strong>Jago Invester Jago Forum</strong><br>
@@ -54,7 +54,7 @@ const ContactMap = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Visit Our Office</h2>
           <p className="text-xl text-gray-600">
-            Located in the heart of New Delhi, we're easily accessible by public transport.
+            Located along Raibareli Road in the Telibagh area of Lucknow, we're easily accessible by public transport.
           </p>
         </div>
         
@@ -66,7 +66,7 @@ const ContactMap = () => {
           <div className="flex items-center justify-center space-x-2 text-gray-600">
             <MapPin className="h-5 w-5 text-blue-600" />
             <span className="text-sm">
-              Financial District, Connaught Place, New Delhi - 110001
+              Financial District, Surya Shyam Apartment Telibagh (Lucknow) - 226025
             </span>
           </div>
         </div>
