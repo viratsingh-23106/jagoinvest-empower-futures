@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -75,7 +74,7 @@ const Home = () => {
                 <Button asChild size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
                   <Link to="/about">Learn More <ArrowRight className="ml-2 h-5 w-5" /></Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-900">
+                <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold">
                   <Link to="/volunteer">Get Involved</Link>
                 </Button>
               </div>
