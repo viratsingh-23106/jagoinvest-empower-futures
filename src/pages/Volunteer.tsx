@@ -284,7 +284,7 @@ const Volunteer = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-green-900 to-blue-800 text-white bg-slate-900">
+      <section className="py-20 bg-gradient-to-r from-green-900 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold">Ready to Make a Difference?</h2>
@@ -297,7 +297,7 @@ const Volunteer = () => {
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Us
               </Button>
-              <Button size="lg" variant="outline" className="border-white hover:bg-white text-slate-900">
+              <Button size="lg" variant="outline" className="border-white bg-sky-300 hover:bg-sky-200 text-lg text-gray-700">
                 <Clock className="mr-2 h-5 w-5" />
                 Learn More
               </Button>
