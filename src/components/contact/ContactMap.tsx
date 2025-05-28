@@ -3,6 +3,8 @@ import { MapPin } from "lucide-react";
 import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { officeLocation, getFullAddress } from "@/config/officeLocation";
+import AddressDisplay from "@/components/common/AddressDisplay";
 
 // Fix for default markers in Leaflet with Vite
 delete (L.Icon.Default.prototype as any)._getIconUrl;
@@ -19,21 +21,27 @@ const ContactMap = () => {
   useEffect(() => {
     if (!mapRef.current) return;
 
-    // Initialize map centered on Connaught Place, New Delhi
-    const map = L.map(mapRef.current).setView([28.6315, 77.2167], 15);
+    // Initialize map using configuration
+    const map = L.map(mapRef.current).setView([
+      officeLocation.coordinates.lat, 
+      officeLocation.coordinates.lng
+    ], officeLocation.mapSettings.zoom);
 
-    // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    // Add tiles using configuration
+    L.tileLayer(officeLocation.mapSettings.tileLayer, {
+      attribution: officeLocation.mapSettings.attribution
     }).addTo(map);
 
     // Add marker for the office location
-    const marker = L.marker([26.7745,809221]).addTo(map);
+    const marker = L.marker([
+      officeLocation.coordinates.lat, 
+      officeLocation.coordinates.lng
+    ]).addTo(map);
+    
     marker.bindPopup(`
       <div class="text-center">
-        <strong>Jago Invester Jago Forum</strong><br>
-        Financial District, Connaught Place<br>
-        New Delhi - 110001, India
+        <strong>${officeLocation.organizationName}</strong><br>
+        ${getFullAddress(officeLocation)}
       </div>
     `);
 
@@ -63,12 +71,7 @@ const ContactMap = () => {
         </div>
         
         <div className="mt-6 text-center">
-          <div className="flex items-center justify-center space-x-2 text-gray-600">
-            <MapPin className="h-5 w-5 text-blue-600" />
-            <span className="text-sm">
-              Financial District, Surya Shyam Apartment Telibagh (Lucknow) - 226025
-            </span>
-          </div>
+          <AddressDisplay variant="full" className="justify-center" />
         </div>
       </div>
     </section>
