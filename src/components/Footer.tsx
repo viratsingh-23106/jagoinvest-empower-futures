@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Shield, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,11 +10,13 @@ const Footer = () => {
           {/* Organization Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-gradient-to-r from-blue-600 to-green-600 p-2 rounded-lg">
-                <Shield className="h-6 w-6 text-white" />
-              </div>
+              <img 
+                src="/lovable-uploads/e0b86152-8fab-47ac-9051-cbd5005d346d.png" 
+                alt="Jago Investor Jago Forum Logo" 
+                className="h-8 w-8 object-contain bg-white rounded p-1"
+              />
               <div className="flex flex-col">
-                <span className="text-xl font-bold">Jago Invester Jago Forum</span>
+                <span className="text-xl font-bold">Jago Investor Jago Forum</span>
                 <span className="text-sm text-gray-400">Empowering Investors</span>
               </div>
             </div>
@@ -64,7 +66,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-gray-400" />
-                <span className="text-gray-400 text-sm">info@jagoinvesterjagoforum.org</span>
+                <span className="text-gray-400 text-sm">info@jagoinvestorjagoforum.org</span>
               </div>
             </div>
           </div>
@@ -72,7 +74,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Jago Invester Jago Forum. All rights reserved. | Registered Non-Profit Organization
+            © 2024 Jago Investor Jago Forum. All rights reserved. | Registered Non-Profit Organization
           </p>
         </div>
       </div>

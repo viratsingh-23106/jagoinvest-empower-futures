@@ -9,7 +9,7 @@ const ContactAdditionalInfo = () => {
           <div className="space-y-4">
             <Globe className="h-12 w-12 text-yellow-400 mx-auto" />
             <h3 className="text-xl font-bold">Website</h3>
-            <p className="text-blue-100">www.jagoinvesterjagoforum.org</p>
+            <p className="text-blue-100">www.jagoinvestorjagoforum.org</p>
           </div>
           
           <div className="space-y-4">

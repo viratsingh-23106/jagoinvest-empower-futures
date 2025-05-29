@@ -19,23 +19,23 @@ const Home = () => {
   const focusAreas = [
     {
       icon: BookOpen,
-      title: "Investor Education and Literacy",
-      description: "Comprehensive financial education programs to empower informed decision-making."
+      title: "Investor Education and Financial Literacy",
+      description: "Comprehensive workshops and training programs that empower individuals with essential financial knowledge for smart investment decisions."
     },
     {
       icon: TrendingUp,
-      title: "Financial Awareness Campaigns",
-      description: "Grassroots campaigns to promote responsible investing and financial wellness."
+      title: "Community Financial Awareness Campaigns",
+      description: "Grassroots initiatives that reach every corner of society to promote responsible investing and build financial wellness at the community level."
     },
     {
       icon: Shield,
-      title: "Grievance Support and Protection",
-      description: "Dedicated support system to help investors resolve financial concerns and disputes."
+      title: "Investor Protection and Grievance Support",
+      description: "A robust support system providing guidance and assistance to help investors navigate financial challenges and resolve investment-related disputes."
     },
     {
       icon: Users,
-      title: "Capacity Building",
-      description: "Training programs for NGOs and community leaders to expand our outreach."
+      title: "Institutional Capacity Building",
+      description: "Collaborative training programs for NGOs, educational institutions, and community leaders to amplify our reach and create lasting impact."
     }
   ];
 
@@ -58,7 +58,7 @@ const Home = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  Welcome to <span className="text-yellow-400">Jago Invester</span> Jago Forum
+                  Welcome to <span className="text-yellow-400">Jago Investor</span> Jago Forum
                 </h1>
                 <p className="text-xl lg:text-2xl text-blue-100">
                   Empowering Investors | Promoting Transparency | Securing Futures
@@ -66,7 +66,7 @@ const Home = () => {
               </div>
               
               <p className="text-lg text-blue-50 leading-relaxed">
-                Jago Invester Jago Forum is a non-governmental organization dedicated to investor education, 
+                Jago Investor Jago Forum is a non-governmental organization dedicated to investor education, 
                 awareness, and welfare. In an increasingly complex financial world, we stand as a guiding 
                 light for individuals, businesses, and organizations seeking reliable investment knowledge and protection.
               </p>
@@ -83,8 +83,8 @@ const Home = () => {
             
             <div className="hidden lg:block">
               <img 
-                src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Financial growth and education" 
+                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Community financial education workshop" 
                 className="rounded-2xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500"
               />
             </div>
@@ -117,8 +117,8 @@ const Home = () => {
             </p>
             <div className="flex justify-center">
               <img 
-                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Community engagement and education" 
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="Team collaboration in financial education planning" 
                 className="rounded-xl shadow-lg max-w-2xl w-full"
               />
             </div>
@@ -170,7 +170,7 @@ const Home = () => {
               <Button asChild size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
                 <Link to="/volunteer">Become a Volunteer</Link>
               </Button>
-              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold">
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold border-2 border-white hover:border-blue-200">
                 <Link to="/join-us">Partner with Us</Link>
               </Button>
             </div>

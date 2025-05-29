@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -21,7 +20,7 @@ const Works = () => {
       title: "Investor Awareness Workshops",
       description: "Comprehensive financial literacy programs conducted in collaboration with NGOs, schools, and local bodies.",
       impact: "Reached 10,000+ participants across 25 states",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       tags: ["Education", "Community Outreach", "Workshops"]
     },
     {
@@ -29,7 +28,7 @@ const Works = () => {
       title: "Financial Grievance Redressal Support",
       description: "Dedicated support system helping investors understand and resolve their financial concerns and disputes.",
       impact: "Assisted 2,500+ investors with grievance resolution",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       tags: ["Support", "Legal Aid", "Resolution"]
     },
     {
@@ -37,7 +36,7 @@ const Works = () => {
       title: "Anti-Fraud Awareness Campaigns",
       description: "Community outreach programs to warn and educate against high-risk or misleading investment offers.",
       impact: "Prevented potential losses worth ₹50+ crores",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       tags: ["Fraud Prevention", "Awareness", "Safety"]
     },
     {
@@ -45,7 +44,7 @@ const Works = () => {
       title: "Institutional Collaborations",
       description: "Strategic partnerships with regulators and financial firms to expand the scope and reach of our programs.",
       impact: "Partnered with 100+ organizations",
-      image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       tags: ["Partnership", "Collaboration", "Growth"]
     }
   ];
@@ -91,7 +90,7 @@ const Works = () => {
           <div className="text-center space-y-6">
             <h1 className="text-4xl lg:text-5xl font-bold">Our Key Initiatives and Impact</h1>
             <p className="text-xl text-blue-100 max-w-4xl mx-auto">
-              At Jago Invester Jago Forum, we believe that knowledge is the first line of defense 
+              At Jago Investor Jago Forum, we believe that knowledge is the first line of defense 
               against financial exploitation. Our works focus on practical education, awareness creation, 
               and enabling access to trustworthy investment practices.
             </p>

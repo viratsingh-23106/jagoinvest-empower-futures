@@ -45,7 +45,7 @@ const About = () => {
       <section className="relative bg-gradient-to-br from-blue-800 to-green-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6">
-            <h1 className="text-4xl lg:text-5xl font-bold">About Jago Invester Jago Forum</h1>
+            <h1 className="text-4xl lg:text-5xl font-bold">About Jago Investor Jago Forum</h1>
             <p className="text-xl text-blue-100 max-w-4xl mx-auto">
               Established with a singular vision — to promote investor awareness and foster a culture 
               of responsible investing in India.
@@ -63,7 +63,7 @@ const About = () => {
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
-                    Jago Invester Jago Forum was established with a singular vision — to promote investor 
+                    Jago Investor Jago Forum was established with a singular vision — to promote investor 
                     awareness and foster a culture of responsible investing in India. We operate as an 
                     independent, non-profit entity committed to the financial well-being of the public.
                   </p>
@@ -96,13 +96,13 @@ const About = () => {
             
             <div className="space-y-6">
               <img 
-                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Team collaboration and planning" 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="Financial education and planning session" 
                 className="rounded-xl shadow-lg w-full"
               />
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Community workshop" 
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="Digital financial literacy workshop" 
                 className="rounded-xl shadow-lg w-full"
               />
             </div>
@@ -145,8 +145,8 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Achievement and success" 
+                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="Successful community workshop celebration" 
                 className="rounded-xl shadow-lg w-full"
               />
             </div>
