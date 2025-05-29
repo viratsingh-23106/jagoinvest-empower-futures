@@ -25,7 +25,7 @@ const Home = () => {
     {
       icon: TrendingUp,
       title: "Community Financial Awareness Campaigns",
-      description: "Grassroots initiatives that reach every corner of society to promote responsible investing and build financial wellness at the community level."
+      description: "Grassroot initiatives that reach every corner of society to promote responsible investing and build financial wellness at the community level."
     },
     {
       icon: Shield,
