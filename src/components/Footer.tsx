@@ -11,9 +11,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/lovable-uploads/e0b86152-8fab-47ac-9051-cbd5005d346d.png" 
+                src="/lovable-uploads/9ba991f0-ca32-4ac7-bf26-f5dd70d21edd.png" 
                 alt="Jago Investor Jago Forum Logo" 
-                className="h-8 w-8 object-contain bg-white rounded p-1"
+                className="h-10 w-10 object-contain bg-white rounded p-1"
               />
               <div className="flex flex-col">
                 <span className="text-xl font-bold">Jago Investor Jago Forum</span>
