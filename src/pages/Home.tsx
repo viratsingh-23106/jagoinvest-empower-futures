@@ -112,7 +112,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Our Mission</h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Through structured programs, grassroots campaigns, and community engagement, we aim to build 
+              Through structured programs, grassroot campaigns, and community engagement, we aim to build 
               an informed investment culture that empowers citizens and safeguards their financial interests.
             </p>
             <div className="flex justify-center">

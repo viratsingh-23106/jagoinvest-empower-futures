@@ -177,9 +177,9 @@ const About = () => {
       <section className="py-20 bg-gradient-to-r from-blue-900 to-green-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-6">
-            <h2 className="text-3xl lg:text-4xl font-bold">Join Our Mission</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold">Join this initiative</h2>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Be part of our journey to create financially empowered communities. 
+              Become a part of our journey to create financially empowered communities. 
               Together, we can build a more secure financial future for all.
             </p>
           </div>

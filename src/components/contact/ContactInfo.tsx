@@ -16,19 +16,19 @@ const ContactInfo = () => {
     {
       icon: MapPin,
       title: "Office Address",
-      details: "Financial District, Connaught Place\nNew Delhi - 110001, India",
+      details: "Financial District, Surya Shyam Apartment Telibagh \nLucknow - 226025, India",
       color: "text-blue-600"
     },
     {
       icon: Phone,
       title: "Phone",
-      details: "+91 11 4567 8900\n+91 98765 43210",
+      details: "+91 8090193598\n+91 8090193598",
       color: "text-green-600"
     },
     {
       icon: Mail,
       title: "Email",
-      details: "info@jagoinvesterjagoforum.org\nsupport@jagoinvesterjagoforum.org",
+      details: "info@jagoinvestorjagoforum.org\nsupport@jagoinvestorjagoforum.org",
       color: "text-purple-600"
     },
     {
