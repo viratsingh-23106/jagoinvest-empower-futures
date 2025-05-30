@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,7 +19,7 @@ const Works = () => {
     {
       icon: GraduationCap,
       title: "Investor Awareness Workshops",
-      description: "Comprehensive financial literacy programs conducted in collaboration with NGOs, schools, and local bodies.",
+      description: "Comprehensive financial literacy programs conducted in collaboration with organizations, schools, and local bodies.",
       impact: "Reached 10,000+ participants across 25 states",
       image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
       tags: ["Education", "Community Outreach", "Workshops"]
@@ -52,20 +53,20 @@ const Works = () => {
   const impactStats = [
     { icon: Users, number: "10,000+", label: "Lives Impacted" },
     { icon: MapPin, number: "25+", label: "States Covered" },
-    { icon: Calendar, number: "500+", label: "Events Organized" },
+    { icon: Calendar, number: "500+", label: "Workshops Organized" },
     { icon: TrendingUp, number: "₹50Cr+", label: "Losses Prevented" }
   ];
 
   const recentProjects = [
     {
-      title: "Rural Financial Literacy Drive",
+      title: "Rural Financial Literacy Workshop",
       location: "Uttar Pradesh & Bihar",
       date: "January 2024",
       participants: "2,000+ farmers and rural entrepreneurs",
       description: "Focused on agricultural investment schemes and rural banking awareness."
     },
     {
-      title: "Youth Investment Awareness Program",
+      title: "Youth Investment Awareness Workshop",
       location: "Delhi & NCR",
       date: "March 2024",
       participants: "1,500+ college students",
@@ -88,10 +89,10 @@ const Works = () => {
       <section className="relative bg-gradient-to-br from-blue-800 to-green-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6">
-            <h1 className="text-4xl lg:text-5xl font-bold">Our Key Initiatives and Impact</h1>
+            <h1 className="text-4xl lg:text-5xl font-bold">Our Educational Workshops and Impact</h1>
             <p className="text-xl text-blue-100 max-w-4xl mx-auto">
               At Jago Investor Jago Forum, we believe that knowledge is the first line of defense 
-              against financial exploitation. Our works focus on practical education, awareness creation, 
+              against financial exploitation. Our workshops focus on practical education, awareness creation, 
               and enabling access to trustworthy investment practices.
             </p>
           </div>
@@ -122,9 +123,9 @@ const Works = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Highlights of Our Work</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Highlights of Our Workshops</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive programs designed to create lasting impact in financial literacy and investor protection.
+              Comprehensive workshop programs designed to create lasting impact in financial literacy and investor protection.
             </p>
           </div>
           
@@ -178,9 +179,9 @@ const Works = () => {
       <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Recent Projects</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Recent Workshops</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our latest initiatives across different regions and demographics.
+              Our latest workshop initiatives across different regions and demographics.
             </p>
           </div>
           
@@ -221,7 +222,7 @@ const Works = () => {
             <h2 className="text-3xl lg:text-4xl font-bold">Our Pride</h2>
             <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
               We take pride in having reached thousands of investors across rural and urban India 
-              with life-changing financial education. Every workshop, every campaign, and every 
+              with life-changing financial education through our workshops. Every workshop, every campaign, and every 
               individual we've helped represents a step towards a more financially secure nation.
             </p>
           </div>

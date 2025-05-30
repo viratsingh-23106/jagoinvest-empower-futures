@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/lovable-uploads/b83498b3-93da-4433-b8bd-63e5b84b53e3.png" 
+                src="/lovable-uploads/301f4699-8d04-4a95-a05c-086e96543691.png" 
                 alt="Jago Investor Jago Forum Logo" 
                 className="h-10 w-10 object-contain bg-white rounded p-1"
               />
@@ -46,7 +46,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/works" className="text-gray-400 hover:text-white transition-colors">Our Works</Link></li>
+              <li><Link to="/works" className="text-gray-400 hover:text-white transition-colors">Our Workshops</Link></li>
               <li><Link to="/join-us" className="text-gray-400 hover:text-white transition-colors">Join Us</Link></li>
             </ul>
           </div>
