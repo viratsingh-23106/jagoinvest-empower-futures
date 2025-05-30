@@ -62,7 +62,7 @@ const ContactMap = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Visit Our Office</h2>
           <p className="text-xl text-gray-600">
-            Located along Raibareli Road in the Telibagh area of Lucknow, we're easily accessible by public transport.
+            Located in Pearl Omaxe Tower at Netaji Subhash Place in New Delhi, we're easily accessible by metro and public transport.
           </p>
         </div>
         

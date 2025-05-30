@@ -35,7 +35,7 @@ const Home = () => {
     {
       icon: Users,
       title: "Institutional Capacity Building",
-      description: "Collaborative training programs for NGOs, educational institutions, and community leaders to amplify our reach and create lasting impact."
+      description: "Collaborative training programs for organizations, educational institutions, and community leaders to amplify our reach and create lasting impact."
     }
   ];
 
@@ -60,13 +60,18 @@ const Home = () => {
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                   Welcome to <span className="text-yellow-400">Jago Investor</span> Jago Forum
                 </h1>
+                <div className="flex items-center space-x-2 mb-4">
+                  <span className="bg-white/10 px-4 py-2 rounded-full text-sm font-semibold border border-white/20">
+                    POWERED BY SEBI
+                  </span>
+                </div>
                 <p className="text-xl lg:text-2xl text-blue-100">
                   Empowering Investors | Promoting Transparency | Securing Futures
                 </p>
               </div>
               
               <p className="text-lg text-blue-50 leading-relaxed">
-                Jago Investor Jago Forum is a non-governmental organization dedicated to investor education, 
+                Jago Investor Jago Forum is a dedicated platform for investor education, 
                 awareness, and welfare. In an increasingly complex financial world, we stand as a guiding 
                 light for individuals, businesses, and organizations seeking reliable investment knowledge and protection.
               </p>
@@ -76,7 +81,7 @@ const Home = () => {
                   <Link to="/about">Learn More <ArrowRight className="ml-2 h-5 w-5" /></Link>
                 </Button>
                 <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold">
-                  <Link to="/volunteer">Get Involved</Link>
+                  <Link to="/join-us">Get Involved</Link>
                 </Button>
               </div>
             </div>
@@ -168,7 +173,7 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
-                <Link to="/volunteer">Become a Volunteer</Link>
+                <Link to="/join-us">Join Our Forum</Link>
               </Button>
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold border-2 border-white hover:border-blue-200">
                 <Link to="/join-us">Partner with Us</Link>

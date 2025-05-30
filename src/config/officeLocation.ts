@@ -26,15 +26,15 @@ export interface OfficeLocation {
 
 export const officeLocation: OfficeLocation = {
   coordinates: {
-    lat: 26.7745,
-    lng: 80.9221
+    lat: 28.6962,
+    lng: 77.1505
   },
   address: {
-    line1: "Financial District",
-    line2: "Surya Shyam Apartment Telibagh",
-    city: "Lucknow",
-    state: "Uttar Pradesh",
-    pincode: "226025",
+    line1: "TF, 3rd Floor",
+    line2: "Pearl Omaxe Tower, Netaji Subhash Place",
+    city: "New Delhi",
+    state: "Delhi",
+    pincode: "110034",
     country: "India"
   },
   mapSettings: {
@@ -43,10 +43,10 @@ export const officeLocation: OfficeLocation = {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   },
   contact: {
-    phone: "+91 XXX XXX XXXX",
-    email: "info@jagoinvesterjagoforum.org"
+    phone: "+91 8090193598",
+    email: "info@jagoinvestorjagoforum.org"
   },
-  organizationName: "Jago Invester Jago Forum"
+  organizationName: "Jago Investor Jago Forum"
 };
 
 export const getFullAddress = (location: OfficeLocation): string => {

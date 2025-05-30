@@ -12,7 +12,6 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Our Works", path: "/works" },
-    { name: "Volunteer", path: "/volunteer" },
     { name: "Join Us", path: "/join-us" },
     { name: "Contact", path: "/contact" },
   ];
@@ -26,7 +25,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/lovable-uploads/9ba991f0-ca32-4ac7-bf26-f5dd70d21edd.png" 
+                src="/lovable-uploads/b83498b3-93da-4433-b8bd-63e5b84b53e3.png" 
                 alt="Jago Investor Jago Forum Logo" 
                 className="h-12 w-12 object-contain"
               />

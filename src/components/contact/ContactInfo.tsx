@@ -16,7 +16,7 @@ const ContactInfo = () => {
     {
       icon: MapPin,
       title: "Office Address",
-      details: "Financial District, Surya Shyam Apartment Telibagh \nLucknow - 226025, India",
+      details: "TF, 3rd Floor, Pearl Omaxe Tower, Netaji Subhash Place \nNew Delhi - 110034, India",
       color: "text-blue-600"
     },
     {

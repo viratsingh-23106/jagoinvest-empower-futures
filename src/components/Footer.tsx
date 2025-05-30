@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/lovable-uploads/9ba991f0-ca32-4ac7-bf26-f5dd70d21edd.png" 
+                src="/lovable-uploads/b83498b3-93da-4433-b8bd-63e5b84b53e3.png" 
                 alt="Jago Investor Jago Forum Logo" 
                 className="h-10 w-10 object-contain bg-white rounded p-1"
               />
@@ -21,7 +21,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              A non-governmental organization dedicated to investor education, awareness, and welfare. 
+              A dedicated forum for investor education, awareness, and welfare. 
               Building an informed investment culture that empowers citizens and safeguards their financial interests.
             </p>
             <div className="flex space-x-4">
@@ -47,7 +47,6 @@ const Footer = () => {
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/works" className="text-gray-400 hover:text-white transition-colors">Our Works</Link></li>
-              <li><Link to="/volunteer" className="text-gray-400 hover:text-white transition-colors">Volunteer</Link></li>
               <li><Link to="/join-us" className="text-gray-400 hover:text-white transition-colors">Join Us</Link></li>
             </ul>
           </div>
@@ -58,7 +57,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-gray-400" />
-                <span className="text-gray-400 text-sm">Surya Shyam Apratment (Telibagh),Lucknow  India</span>
+                <span className="text-gray-400 text-sm">TF, 3rd Floor, Pearl Omaxe Tower, Netaji Subhash Place, New Delhi - 110034</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-gray-400" />
@@ -74,7 +73,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Jago Investor Jago Forum. All rights reserved. | Registered Non-Profit Organization
+            © 2024 Jago Investor Jago Forum. All rights reserved. | Registered Investment Forum
           </p>
         </div>
       </div>
