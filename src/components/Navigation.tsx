@@ -25,7 +25,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/lovable-uploads/301f4699-8d04-4a95-a05c-086e96543691.png" 
+                src="/lovable-uploads/9ba991f0-ca32-4ac7-bf26-f5dd70d21edd.png" 
                 alt="Jago Investor Jago Forum Logo" 
                 className="h-12 w-12 object-contain"
               />
