@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -57,31 +56,31 @@ const Home = () => {
   const partners = [
     {
       name: "MHRD Government of India",
-      logo: "/lovable-uploads/16f0b0c5-68cf-48ee-a7de-e65c4256abd1.png"
+      logo: "/lovable-uploads/4ac4ad11-7b8b-42b0-be32-aeb5f19f5c49.png"
     },
     {
       name: "Skill India", 
-      logo: "/lovable-uploads/ce7d6435-e608-443b-a9a4-cc4d26392153.png"
+      logo: "/lovable-uploads/046c2f67-44d0-4b0d-98bf-1db72d28ae9f.png"
     },
     {
       name: "MSME Government of India",
-      logo: "/lovable-uploads/fdb6a7a4-04e4-4f47-8ebc-9d369f09cb2d.png"
+      logo: "/lovable-uploads/3bba9c0f-ec88-4694-9c5e-3730b33b0bfb.png"
     },
     {
       name: "NSE",
-      logo: "/lovable-uploads/2371e770-41e8-4965-990e-74875e475506.png"
+      logo: "/lovable-uploads/79730e14-4095-4315-a7f8-d822e5903102.png"
     },
     {
       name: "SEBI",
-      logo: "/lovable-uploads/289fdf1d-337b-420e-9caa-f741ea2fa762.png"
+      logo: "/lovable-uploads/b8a9832e-8893-460f-a2c3-2a666cd2a1c9.png"
     },
     {
       name: "ISO 9001",
-      logo: "/lovable-uploads/6debc283-3c54-4eb9-825b-cd58cd421eff.png"
+      logo: "/lovable-uploads/bf43e48c-1be9-471c-b7ec-3cf15e415820.png"
     },
     {
       name: "IAF", 
-      logo: "/lovable-uploads/eb8c9af8-71ee-4550-95fe-3c5e06ecff67.png"
+      logo: "/lovable-uploads/3e1331e2-8fc7-4811-9210-5aa2c1dcc901.png"
     }
   ];
 
