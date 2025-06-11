@@ -1,8 +1,14 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { 
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
 import { 
   BookOpen, 
@@ -14,6 +20,7 @@ import {
   ArrowRight,
   CheckCircle
 } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
 
 const Home = () => {
   const focusAreas = [
@@ -44,6 +51,37 @@ const Home = () => {
     { number: "500+", label: "Workshops Conducted" },
     { number: "25+", label: "States Covered" },
     { number: "100+", label: "Partner Organizations" }
+  ];
+
+  const partners = [
+    {
+      name: "MHRD Government of India",
+      logo: "/lovable-uploads/16f0b0c5-68cf-48ee-a7de-e65c4256abd1.png"
+    },
+    {
+      name: "Skill India",
+      logo: "/lovable-uploads/ce7d6435-e608-443b-a9a4-cc4d26392153.png"
+    },
+    {
+      name: "MSME Government of India",
+      logo: "/lovable-uploads/fdb6a7a4-04e4-4f47-8ebc-9d369f09cb2d.png"
+    },
+    {
+      name: "NSE",
+      logo: "/lovable-uploads/2371e770-41e8-4965-990e-74875e475506.png"
+    },
+    {
+      name: "SEBI",
+      logo: "/lovable-uploads/289fdf1d-337b-420e-9caa-f741ea2fa762.png"
+    },
+    {
+      name: "ISO 9001",
+      logo: "/lovable-uploads/6debc283-3c54-4eb9-825b-cd58cd421eff.png"
+    },
+    {
+      name: "IAF",
+      logo: "/lovable-uploads/eb8c9af8-71ee-4550-95fe-3c5e06ecff67.png"
+    }
   ];
 
   return (
@@ -156,6 +194,51 @@ const Home = () => {
                 </Card>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Partners Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Partners</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We collaborate with leading organizations and government bodies to strengthen investor education and protection across India.
+            </p>
+          </div>
+          
+          <div className="relative">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 3000,
+                }),
+              ]}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-1">
+                {partners.map((partner, index) => (
+                  <CarouselItem key={index} className="pl-1 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
+                    <div className="p-4">
+                      <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 h-32 flex items-center justify-center group">
+                        <img
+                          src={partner.logo}
+                          alt={partner.name}
+                          className="max-h-16 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-80 group-hover:opacity-100"
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden md:flex" />
+              <CarouselNext className="hidden md:flex" />
+            </Carousel>
           </div>
         </div>
       </section>
