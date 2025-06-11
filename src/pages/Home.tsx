@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -56,31 +57,31 @@ const Home = () => {
   const partners = [
     {
       name: "MHRD Government of India",
-      logo: "/lovable-uploads/4ac4ad11-7b8b-42b0-be32-aeb5f19f5c49.png"
+      logo: "/lovable-uploads/1f44ce22-325f-4f53-bfa2-a304753f4e13.png"
     },
     {
       name: "Skill India", 
-      logo: "/lovable-uploads/046c2f67-44d0-4b0d-98bf-1db72d28ae9f.png"
+      logo: "/lovable-uploads/bb080aec-26f5-4841-930b-970b25a74078.png"
     },
     {
       name: "MSME Government of India",
-      logo: "/lovable-uploads/3bba9c0f-ec88-4694-9c5e-3730b33b0bfb.png"
+      logo: "/lovable-uploads/1ded049d-d287-4a43-a877-736c13a4e8f7.png"
     },
     {
       name: "NSE",
-      logo: "/lovable-uploads/79730e14-4095-4315-a7f8-d822e5903102.png"
+      logo: "/lovable-uploads/206a8e47-46cf-4c25-b82a-48e0362c84b9.png"
     },
     {
       name: "SEBI",
-      logo: "/lovable-uploads/b8a9832e-8893-460f-a2c3-2a666cd2a1c9.png"
+      logo: "/lovable-uploads/f9cd2ed0-a99e-4db7-ab6d-89fc71055e45.png"
     },
     {
       name: "ISO 9001",
-      logo: "/lovable-uploads/bf43e48c-1be9-471c-b7ec-3cf15e415820.png"
+      logo: "/lovable-uploads/ff062e8d-91dd-4c9b-a4ce-ea6bddfd0d15.png"
     },
     {
       name: "IAF", 
-      logo: "/lovable-uploads/3e1331e2-8fc7-4811-9210-5aa2c1dcc901.png"
+      logo: "/lovable-uploads/a7f08d27-dd24-47f5-a77c-8330a05bce3d.png"
     }
   ];
 
@@ -199,12 +200,26 @@ const Home = () => {
       </section>
 
       {/* Our Partners Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Partners</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We collaborate with leading organizations and government bodies to strengthen investor education and protection across India.
+      <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-indigo-200 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-100 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-20">
+            <div className="inline-block mb-4">
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-sm font-semibold tracking-wide uppercase">
+                Trusted Partnerships
+              </span>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Esteemed</span> Partners
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              We collaborate with leading organizations and government bodies to strengthen investor education and protection across India, building a robust ecosystem of financial empowerment.
             </p>
           </div>
           
@@ -216,33 +231,53 @@ const Home = () => {
               }}
               plugins={[
                 Autoplay({
-                  delay: 3000,
+                  delay: 2500,
+                  stopOnInteraction: false,
                 }),
               ]}
               className="w-full"
             >
-              <CarouselContent className="-ml-1">
+              <CarouselContent className="-ml-2 md:-ml-4">
                 {partners.map((partner, index) => (
-                  <CarouselItem key={index} className="pl-1 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
-                    <div className="p-4">
-                      <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 h-32 flex items-center justify-center group">
-                        <img
-                          src={partner.logo}
-                          alt={partner.name}
-                          className="max-h-16 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-80 group-hover:opacity-100"
-                          onError={(e) => {
-                            console.log(`Failed to load image: ${partner.logo}`);
-                            e.currentTarget.style.display = 'none';
-                          }}
-                        />
-                      </div>
+                  <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                    <div className="p-1">
+                      <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2">
+                        <CardContent className="p-8">
+                          <div className="h-24 flex items-center justify-center">
+                            <img
+                              src={partner.logo}
+                              alt={partner.name}
+                              className="max-h-16 max-w-full object-contain filter brightness-75 contrast-125 group-hover:brightness-100 group-hover:scale-110 transition-all duration-500"
+                              onError={(e) => {
+                                console.log(`Failed to load image: ${partner.logo}`);
+                                e.currentTarget.style.display = 'none';
+                              }}
+                            />
+                          </div>
+                          <div className="mt-4 text-center">
+                            <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors duration-300">
+                              {partner.name}
+                            </p>
+                          </div>
+                        </CardContent>
+                      </Card>
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex" />
-              <CarouselNext className="hidden md:flex" />
+              <CarouselPrevious className="hidden md:flex -left-12 bg-white/90 backdrop-blur-sm border-gray-200 hover:bg-white hover:shadow-lg transition-all duration-300" />
+              <CarouselNext className="hidden md:flex -right-12 bg-white/90 backdrop-blur-sm border-gray-200 hover:bg-white hover:shadow-lg transition-all duration-300" />
             </Carousel>
+          </div>
+          
+          {/* Trust indicators */}
+          <div className="mt-16 text-center">
+            <div className="inline-flex items-center space-x-2 bg-white/60 backdrop-blur-sm rounded-full px-6 py-3 border border-gray-200">
+              <CheckCircle className="h-5 w-5 text-green-600" />
+              <span className="text-sm font-medium text-gray-700">
+                Officially recognized and certified partnerships
+              </span>
+            </div>
           </div>
         </div>
       </section>
