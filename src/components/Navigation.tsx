@@ -30,8 +30,8 @@ const Navigation = () => {
                 className="h-12 w-12 object-contain"
               />
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-gray-900">Jago Investor</span>
-                <span className="text-sm text-gray-600">Jago Forum</span>
+                <span className="text-xl font-bold text-gray-900">Jago Investor Jago Forum</span>
+{/*                 <span className="text-sm text-gray-600">Jago Forum</span> */}
               </div>
             </Link>
           </div>
