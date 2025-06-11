@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -59,7 +60,7 @@ const Home = () => {
       logo: "/lovable-uploads/16f0b0c5-68cf-48ee-a7de-e65c4256abd1.png"
     },
     {
-      name: "Skill India",
+      name: "Skill India", 
       logo: "/lovable-uploads/ce7d6435-e608-443b-a9a4-cc4d26392153.png"
     },
     {
@@ -79,7 +80,7 @@ const Home = () => {
       logo: "/lovable-uploads/6debc283-3c54-4eb9-825b-cd58cd421eff.png"
     },
     {
-      name: "IAF",
+      name: "IAF", 
       logo: "/lovable-uploads/eb8c9af8-71ee-4550-95fe-3c5e06ecff67.png"
     }
   ];
@@ -230,6 +231,10 @@ const Home = () => {
                           src={partner.logo}
                           alt={partner.name}
                           className="max-h-16 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 opacity-80 group-hover:opacity-100"
+                          onError={(e) => {
+                            console.log(`Failed to load image: ${partner.logo}`);
+                            e.currentTarget.style.display = 'none';
+                          }}
                         />
                       </div>
                     </div>
