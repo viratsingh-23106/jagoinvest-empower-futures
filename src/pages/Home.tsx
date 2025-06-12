@@ -61,11 +61,11 @@ const Home = () => {
     },
     {
       name: "Skill India", 
-      logo: "/lovable-uploads/skill-india-logo-png_seeklogo.com.png"
+      logo: "/lovable-uploads/skill-india-logo-png_seeklogo-408074.png"
     },
     {
       name: "MSME Government of India",
-      logo: "/lovable-uploads/ministry-of-micro-small-and-medium-enterprises-logo-png_seeklogo.com.png"
+      logo: "/lovable-uploads/ministry-of-micro-small-and-medium-enterprises-logo-png_seeklogo-524483.png"
     },
     {
       name: "NSE",
