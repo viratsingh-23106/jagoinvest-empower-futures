@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Works from "./pages/Works";
 import JoinUs from "./pages/JoinUs";
 import Contact from "./pages/Contact";
+import RepEoi from "./pages/RepEoi";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/works" element={<Works />} />
           <Route path="/join-us" element={<JoinUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/rep-eoi" element={<RepEoi />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
