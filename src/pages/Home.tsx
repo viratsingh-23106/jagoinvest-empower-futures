@@ -57,31 +57,31 @@ const Home = () => {
   const partners = [
     {
       name: "MHRD Government of India",
-      logo: "/lovable-uploads/1f44ce22-325f-4f53-bfa2-a304753f4e13.png"
+      logo: "/lovable-uploads/mhrd-logo.png"
     },
     {
       name: "Skill India", 
-      logo: "/lovable-uploads/bb080aec-26f5-4841-930b-970b25a74078.png"
+      logo: "/lovable-uploads/skill-india-logo-png_seeklogo.com.png"
     },
     {
       name: "MSME Government of India",
-      logo: "/lovable-uploads/1ded049d-d287-4a43-a877-736c13a4e8f7.png"
+      logo: "/lovable-uploads/ministry-of-micro-small-and-medium-enterprises.png"
     },
     {
       name: "NSE",
-      logo: "/lovable-uploads/206a8e47-46cf-4c25-b82a-48e0362c84b9.png"
+      logo: "/lovable-uploads/national-stock-exchange-logo.png"
     },
     {
       name: "SEBI",
-      logo: "/lovable-uploads/f9cd2ed0-a99e-4db7-ab6d-89fc71055e45.png"
+      logo: "/lovable-uploads/sebi-logo-png_seeklogo.com.png"
     },
     {
       name: "ISO 9001",
-      logo: "/lovable-uploads/ff062e8d-91dd-4c9b-a4ce-ea6bddfd0d15.png"
+      logo: "/lovable-uploads/iso-9001-logo-png_seeklogo.com.png"
     },
     {
       name: "IAF", 
-      logo: "/lovable-uploads/a7f08d27-dd24-47f5-a77c-8330a05bce3d.png"
+      logo: "/lovable-uploads/iaf-recognition-arrangement-logo.png"
     }
   ];
 
