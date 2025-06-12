@@ -65,23 +65,23 @@ const Home = () => {
     },
     {
       name: "MSME Government of India",
-      logo: "/lovable-uploads/ministry-of-micro-small-and-medium-enterprises.png"
+      logo: "/lovable-uploads/ministry-of-micro-small-and-medium-enterprises-logo-png_seeklogo.com.png"
     },
     {
       name: "NSE",
-      logo: "/lovable-uploads/national-stock-exchange-logo.png"
+      logo: "/lovable-uploads/national-stock-exchange-of-india-nse-vector-logo.png"
     },
     {
       name: "SEBI",
-      logo: "/lovable-uploads/sebi-logo-png_seeklogo.com.png"
+      logo: "/lovable-uploads/sebi-logo-png_seeklogo-305382.png"
     },
     {
       name: "ISO 9001",
-      logo: "/lovable-uploads/iso-9001-logo-png_seeklogo.com.png"
+      logo: "/lovable-uploads/iso-9001-logo-png_seeklogo-171579.png"
     },
     {
       name: "IAF", 
-      logo: "/lovable-uploads/iaf-recognition-arrangement-logo.png"
+      logo: "/lovable-uploads/iaf-recognition-arrangement-logo-png_seeklogo-355644.png"
     }
   ];
 
