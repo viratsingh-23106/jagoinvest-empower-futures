@@ -180,7 +180,7 @@ const RepEoi = () => {
                   </p>
                   <div className="space-y-2 text-sm text-gray-700">
                     <p><strong>Email:</strong> partnerships@jagoinvestorjagoforum.org</p>
-                    <p><strong>Phone:</strong> +91 8090193598</p>
+                    <p><strong>Phone:</strong> +91 928933553</p>
                   </div>
                 </CardContent>
               </Card>
