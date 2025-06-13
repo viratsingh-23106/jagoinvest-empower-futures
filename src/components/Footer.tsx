@@ -47,7 +47,7 @@ const Footer = () => {
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/works" className="text-gray-400 hover:text-white transition-colors">Our Workshops</Link></li>
-              <li><Link to="/rep-eoi" className="text-gray-400 hover:text-white transition-colors">REP/EOI</Link></li>
+              <li><Link to="/rep-eoi" className="text-gray-400 hover:text-white transition-colors">RFP</Link></li>
               <li><Link to="/join-us" className="text-gray-400 hover:text-white transition-colors">Join Us</Link></li>
             </ul>
           </div>
@@ -62,7 +62,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-gray-400" />
-                <span className="text-gray-400 text-sm">+91 8090193598</span>
+                <span className="text-gray-400 text-sm">+91 928933553</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-gray-400" />

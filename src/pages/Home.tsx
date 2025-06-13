@@ -216,7 +216,7 @@ const Home = () => {
               </span>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Esteemed</span> Partners
+              AFFILIATION <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">&</span> Partners
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               We collaborate with leading organizations and government bodies to strengthen investor education and protection across India, building a robust ecosystem of financial empowerment.
