@@ -1,8 +1,8 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { 
   Carousel,
   CarouselContent,
@@ -199,7 +199,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Our Partners Section */}
+      {/* Enhanced Our Partners Section */}
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-30">
@@ -231,7 +231,7 @@ const Home = () => {
               }}
               plugins={[
                 Autoplay({
-                  delay: 2500,
+                  delay: 3000,
                   stopOnInteraction: false,
                 }),
               ]}
@@ -239,23 +239,33 @@ const Home = () => {
             >
               <CarouselContent className="-ml-2 md:-ml-4">
                 {partners.map((partner, index) => (
-                  <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                    <div className="p-1">
-                      <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2">
-                        <CardContent className="p-8">
-                          <div className="h-24 flex items-center justify-center">
-                            <img
-                              src={partner.logo}
-                              alt={partner.name}
-                              className="max-h-16 max-w-full object-contain filter brightness-75 contrast-125 group-hover:brightness-100 group-hover:scale-110 transition-all duration-500"
-                              onError={(e) => {
-                                console.log(`Failed to load image: ${partner.logo}`);
-                                e.currentTarget.style.display = 'none';
-                              }}
-                            />
+                  <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                    <div className="p-2">
+                      <Card className="bg-white/90 backdrop-blur-sm border border-gray-200/50 shadow-lg hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2 hover:border-blue-300/50">
+                        <CardContent className="p-8 h-40 flex flex-col">
+                          <div className="flex-1 flex items-center justify-center mb-4">
+                            <AspectRatio ratio={3/2} className="w-full max-w-[140px]">
+                              <div className="w-full h-full bg-white rounded-lg shadow-inner border border-gray-100 p-4 flex items-center justify-center">
+                                <img
+                                  src={partner.logo}
+                                  alt={partner.name}
+                                  className="max-w-full max-h-full object-contain filter brightness-90 contrast-110 group-hover:brightness-100 group-hover:scale-105 transition-all duration-500"
+                                  onError={(e) => {
+                                    console.log(`Failed to load image: ${partner.logo}`);
+                                    const target = e.currentTarget;
+                                    target.style.display = 'none';
+                                    target.parentElement!.innerHTML = `
+                                      <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm font-medium">
+                                        ${partner.name}
+                                      </div>
+                                    `;
+                                  }}
+                                />
+                              </div>
+                            </AspectRatio>
                           </div>
-                          <div className="mt-4 text-center">
-                            <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors duration-300">
+                          <div className="text-center">
+                            <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-700 transition-colors duration-300 leading-tight">
                               {partner.name}
                             </p>
                           </div>
@@ -265,14 +275,14 @@ const Home = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex -left-12 bg-white/90 backdrop-blur-sm border-gray-200 hover:bg-white hover:shadow-lg transition-all duration-300" />
-              <CarouselNext className="hidden md:flex -right-12 bg-white/90 backdrop-blur-sm border-gray-200 hover:bg-white hover:shadow-lg transition-all duration-300" />
+              <CarouselPrevious className="hidden md:flex -left-12 bg-white/90 backdrop-blur-sm border-gray-200 hover:bg-white hover:shadow-lg hover:border-blue-300 transition-all duration-300" />
+              <CarouselNext className="hidden md:flex -right-12 bg-white/90 backdrop-blur-sm border-gray-200 hover:bg-white hover:shadow-lg hover:border-blue-300 transition-all duration-300" />
             </Carousel>
           </div>
           
           {/* Trust indicators */}
           <div className="mt-16 text-center">
-            <div className="inline-flex items-center space-x-2 bg-white/60 backdrop-blur-sm rounded-full px-6 py-3 border border-gray-200">
+            <div className="inline-flex items-center space-x-2 bg-white/70 backdrop-blur-sm rounded-full px-6 py-3 border border-gray-200 shadow-sm">
               <CheckCircle className="h-5 w-5 text-green-600" />
               <span className="text-sm font-medium text-gray-700">
                 Officially recognized and certified partnerships
