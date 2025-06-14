@@ -1,8 +1,8 @@
-
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { 
   Carousel,
   CarouselContent,
@@ -19,7 +19,8 @@ import {
   Target, 
   Award,
   ArrowRight,
-  CheckCircle
+  CheckCircle,
+  Sparkles
 } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -199,27 +200,39 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Our Partners Section */}
-      <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden">
+      {/* Enhanced Our Partners Section with improved elegance and professionalism */}
+      <section className="py-32 bg-gradient-to-b from-slate-50/50 via-white to-blue-50/30 relative overflow-hidden">
         {/* Background decorative elements */}
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 bg-indigo-200 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-100 rounded-full blur-3xl"></div>
-        </div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(59,130,246,0.05),transparent_70%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(16,185,129,0.05),transparent_70%)]"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-20">
-            <div className="inline-block mb-4">
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-sm font-semibold tracking-wide uppercase">
+          <div className="text-center mb-24">
+            <div className="inline-flex items-center gap-2 mb-6">
+              <div className="h-px w-8 bg-gradient-to-r from-transparent to-blue-500"></div>
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent text-sm font-bold tracking-[0.2em] uppercase">
                 Trusted Partnerships
               </span>
+              <div className="h-px w-8 bg-gradient-to-l from-transparent to-blue-500"></div>
             </div>
+<<<<<<< HEAD
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               AFFILIATION <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">&</span> PARTNERS
+=======
+            
+            <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+              AFFILIATION 
+              <span className="relative mx-4">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">&</span>
+                <Sparkles className="absolute -top-2 -right-2 h-6 w-6 text-yellow-500 animate-pulse" />
+              </span> 
+              Partners
+>>>>>>> 9c1d0d92456d7648df2f62780a6eda00fb424d0c
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              We collaborate with leading organizations and government bodies to strengthen investor education and protection across India, building a robust ecosystem of financial empowerment.
+            
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
+              We collaborate with leading organizations and government bodies to strengthen investor education 
+              and protection across India, building a robust ecosystem of financial empowerment.
             </p>
           </div>
           
@@ -231,50 +244,78 @@ const Home = () => {
               }}
               plugins={[
                 Autoplay({
-                  delay: 2500,
+                  delay: 3500,
                   stopOnInteraction: false,
                 }),
               ]}
               className="w-full"
             >
-              <CarouselContent className="-ml-2 md:-ml-4">
+              <CarouselContent className="-ml-3 md:-ml-4">
                 {partners.map((partner, index) => (
-                  <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                    <div className="p-1">
-                      <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2">
-                        <CardContent className="p-8">
-                          <div className="h-24 flex items-center justify-center">
-                            <img
-                              src={partner.logo}
-                              alt={partner.name}
-                              className="max-h-16 max-w-full object-contain filter brightness-75 contrast-125 group-hover:brightness-100 group-hover:scale-110 transition-all duration-500"
-                              onError={(e) => {
-                                console.log(`Failed to load image: ${partner.logo}`);
-                                e.currentTarget.style.display = 'none';
-                              }}
-                            />
+                  <CarouselItem key={index} className="pl-3 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                    <div className="p-2">
+                      <Card className="bg-white/80 backdrop-blur-sm border-2 border-gray-100/60 shadow-lg hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 group hover:-translate-y-3 hover:border-blue-300/50 relative overflow-hidden">
+                        {/* Subtle gradient overlay on hover */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/0 to-indigo-50/0 group-hover:from-blue-50/40 group-hover:to-indigo-50/20 transition-all duration-500"></div>
+                        
+                        <CardContent className="p-8 h-52 flex flex-col relative z-10">
+                          <div className="flex-1 flex items-center justify-center mb-4">
+                            <div className="w-full h-36 bg-white/90 rounded-xl border border-gray-100/80 p-6 flex items-center justify-center overflow-hidden shadow-inner group-hover:shadow-md transition-all duration-300">
+                              <img
+                                src={partner.logo}
+                                alt={partner.name}
+                                className="max-w-full max-h-full object-contain filter brightness-100 contrast-100 group-hover:scale-110 group-hover:brightness-110 transition-all duration-500"
+                                style={{
+                                  maxWidth: '150px',
+                                  maxHeight: '90px',
+                                  width: 'auto',
+                                  height: 'auto'
+                                }}
+                                onError={(e) => {
+                                  console.log(`Failed to load image: ${partner.logo}`);
+                                  const target = e.currentTarget;
+                                  target.style.display = 'none';
+                                  target.parentElement!.innerHTML = `
+                                    <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm font-medium">
+                                      ${partner.name}
+                                    </div>
+                                  `;
+                                }}
+                              />
+                            </div>
                           </div>
-                          <div className="mt-4 text-center">
-                            <p className="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors duration-300">
-                              {partner.name}
-                            </p>
+                          
+                          {/* Enhanced partner name on hover */}
+                          <div className="absolute inset-x-0 bottom-6 px-6 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+                            <div className="text-center bg-white/95 backdrop-blur-md rounded-xl py-3 px-4 shadow-lg border border-gray-200/50">
+                              <p className="text-sm font-bold text-gray-800 leading-tight tracking-wide">
+                                {partner.name}
+                              </p>
+                            </div>
                           </div>
+                          
+                          {/* Decorative corner accent */}
+                          <div className="absolute top-4 right-4 w-3 h-3 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 scale-0 group-hover:scale-100"></div>
                         </CardContent>
                       </Card>
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex -left-12 bg-white/90 backdrop-blur-sm border-gray-200 hover:bg-white hover:shadow-lg transition-all duration-300" />
-              <CarouselNext className="hidden md:flex -right-12 bg-white/90 backdrop-blur-sm border-gray-200 hover:bg-white hover:shadow-lg transition-all duration-300" />
+              
+              {/* Enhanced navigation buttons */}
+              <CarouselPrevious className="hidden md:flex -left-14 bg-white/90 backdrop-blur-sm border-2 border-gray-200/60 hover:bg-white hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 h-12 w-12" />
+              <CarouselNext className="hidden md:flex -right-14 bg-white/90 backdrop-blur-sm border-2 border-gray-200/60 hover:bg-white hover:shadow-xl hover:shadow-blue-500/10 hover:border-blue-400/50 transition-all duration-300 h-12 w-12" />
             </Carousel>
           </div>
           
-          {/* Trust indicators */}
-          <div className="mt-16 text-center">
-            <div className="inline-flex items-center space-x-2 bg-white/60 backdrop-blur-sm rounded-full px-6 py-3 border border-gray-200">
-              <CheckCircle className="h-5 w-5 text-green-600" />
-              <span className="text-sm font-medium text-gray-700">
+          {/* Enhanced trust indicators */}
+          <div className="mt-20 text-center">
+            <div className="inline-flex items-center space-x-3 bg-white/70 backdrop-blur-sm rounded-2xl px-8 py-4 border border-gray-200/60 shadow-lg">
+              <div className="p-2 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full">
+                <CheckCircle className="h-5 w-5 text-white" />
+              </div>
+              <span className="text-sm font-semibold text-gray-700 tracking-wide">
                 Officially recognized and certified partnerships
               </span>
             </div>
@@ -298,7 +339,7 @@ const Home = () => {
                 <Link to="/join-us">Join Our Forum</Link>
               </Button>
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold border-2 border-white hover:border-blue-200">
-                <Link to="/join-us">Partner with Us</Link>
+                <Link to="/partner-with-us">Partner with Us</Link>
               </Button>
             </div>
           </div>
