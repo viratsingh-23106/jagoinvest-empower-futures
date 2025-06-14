@@ -199,15 +199,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Enhanced Our Partners Section */}
-      <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 bg-indigo-200 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-100 rounded-full blur-3xl"></div>
-        </div>
-        
+      {/* Enhanced Our Partners Section with improved white background and better fitting */}
+      <section className="py-24 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <div className="inline-block mb-4">
@@ -241,28 +234,32 @@ const Home = () => {
                 {partners.map((partner, index) => (
                   <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
                     <div className="p-2">
-                      <Card className="bg-white/90 backdrop-blur-sm border border-gray-200/50 shadow-lg hover:shadow-2xl transition-all duration-500 group hover:-translate-y-2 hover:border-blue-300/50">
-                        <CardContent className="p-8 h-40 flex flex-col">
-                          <div className="flex-1 flex items-center justify-center mb-4">
-                            <AspectRatio ratio={3/2} className="w-full max-w-[140px]">
-                              <div className="w-full h-full bg-white rounded-lg shadow-inner border border-gray-100 p-4 flex items-center justify-center">
-                                <img
-                                  src={partner.logo}
-                                  alt={partner.name}
-                                  className="max-w-full max-h-full object-contain filter brightness-90 contrast-110 group-hover:brightness-100 group-hover:scale-105 transition-all duration-500"
-                                  onError={(e) => {
-                                    console.log(`Failed to load image: ${partner.logo}`);
-                                    const target = e.currentTarget;
-                                    target.style.display = 'none';
-                                    target.parentElement!.innerHTML = `
-                                      <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm font-medium">
-                                        ${partner.name}
-                                      </div>
-                                    `;
-                                  }}
-                                />
-                              </div>
-                            </AspectRatio>
+                      <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1">
+                        <CardContent className="p-8 h-48 flex flex-col">
+                          <div className="flex-1 flex items-center justify-center mb-6">
+                            <div className="w-full h-32 bg-white rounded-lg border border-gray-50 p-6 flex items-center justify-center overflow-hidden">
+                              <img
+                                src={partner.logo}
+                                alt={partner.name}
+                                className="max-w-full max-h-full object-contain filter brightness-100 contrast-100 group-hover:scale-105 transition-all duration-300"
+                                style={{
+                                  maxWidth: '140px',
+                                  maxHeight: '80px',
+                                  width: 'auto',
+                                  height: 'auto'
+                                }}
+                                onError={(e) => {
+                                  console.log(`Failed to load image: ${partner.logo}`);
+                                  const target = e.currentTarget;
+                                  target.style.display = 'none';
+                                  target.parentElement!.innerHTML = `
+                                    <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm font-medium">
+                                      ${partner.name}
+                                    </div>
+                                  `;
+                                }}
+                              />
+                            </div>
                           </div>
                           <div className="text-center">
                             <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-700 transition-colors duration-300 leading-tight">
@@ -275,14 +272,14 @@ const Home = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex -left-12 bg-white/90 backdrop-blur-sm border-gray-200 hover:bg-white hover:shadow-lg hover:border-blue-300 transition-all duration-300" />
-              <CarouselNext className="hidden md:flex -right-12 bg-white/90 backdrop-blur-sm border-gray-200 hover:bg-white hover:shadow-lg hover:border-blue-300 transition-all duration-300" />
+              <CarouselPrevious className="hidden md:flex -left-12 bg-white border-gray-200 hover:bg-gray-50 hover:shadow-md hover:border-blue-300 transition-all duration-300" />
+              <CarouselNext className="hidden md:flex -right-12 bg-white border-gray-200 hover:bg-gray-50 hover:shadow-md hover:border-blue-300 transition-all duration-300" />
             </Carousel>
           </div>
           
           {/* Trust indicators */}
           <div className="mt-16 text-center">
-            <div className="inline-flex items-center space-x-2 bg-white/70 backdrop-blur-sm rounded-full px-6 py-3 border border-gray-200 shadow-sm">
+            <div className="inline-flex items-center space-x-2 bg-white rounded-full px-6 py-3 border border-gray-200 shadow-sm">
               <CheckCircle className="h-5 w-5 text-green-600" />
               <span className="text-sm font-medium text-gray-700">
                 Officially recognized and certified partnerships
@@ -308,7 +305,7 @@ const Home = () => {
                 <Link to="/join-us">Join Our Forum</Link>
               </Button>
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold border-2 border-white hover:border-blue-200">
-                <Link to="/join-us">Partner with Us</Link>
+                <Link to="/partner-with-us">Partner with Us</Link>
               </Button>
             </div>
           </div>
