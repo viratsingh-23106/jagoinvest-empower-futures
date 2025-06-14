@@ -45,10 +45,10 @@ const RepEoi = () => {
           <div className="text-center space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                RFP
+                RFP/EOI
               </h1>
               <p className="text-xl lg:text-2xl text-blue-100">
-                Request for PROPOSAL
+                REQUEST FOR PROPSAL PROPOSAL & EXPRESSION OF INTEREST
               </p>
             </div>
             
@@ -72,7 +72,7 @@ const RepEoi = () => {
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Partnership Opportunity</h2>
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
                   We are seeking dedicated partners who share our vision of building an informed 
-                  investment culture. Through our RFP (Request OF PROPOSAL)  program, we invite qualified organizations to join 
+                  investment culture. Through our RFP (REQUEST FOR PROPOSAL) & EOI(EXPRESSION OF INTEREST)  program, we invite qualified organizations to join 
                   our network of change-makers.
                 </p>
                 
@@ -122,11 +122,11 @@ const RepEoi = () => {
                   </div>
                   
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Download RFP Document
+                    Download RFP/EOI Document
                   </h3>
                   
                   <p className="text-gray-600 mb-6">
-                    Get the complete RFP document with detailed information about 
+                    Get the complete RFP/EOI document with detailed information about 
                     partnership opportunities, application process, and requirements.
                   </p>
                   
@@ -175,7 +175,7 @@ const RepEoi = () => {
                     <h3 className="text-lg font-semibold text-gray-900">Need Help?</h3>
                   </div>
                   <p className="text-gray-600 mb-3">
-                    For any queries regarding the RFP process, please contact us:
+                    For any queries regarding the RFP/EOI process, please contact us:
                   </p>
                   <div className="space-y-2 text-sm text-gray-700">
                     <p><strong>Email:</strong> partnerships@jagoinvestorjagoforum.org</p>

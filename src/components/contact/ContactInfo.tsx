@@ -16,7 +16,7 @@ const ContactInfo = () => {
     {
       icon: MapPin,
       title: "Office Address",
-      details: "TF, 3rd Floor, Pearl Omaxe Tower, Netaji Subhash Place \nNew Delhi - 110034, India",
+      details: "3rd Floor, POT, Netaji Subhash Place \nNew Delhi - 110034, India",
       color: "text-blue-600"
     },
     {

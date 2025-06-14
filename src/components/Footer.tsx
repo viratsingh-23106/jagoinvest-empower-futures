@@ -47,7 +47,7 @@ const Footer = () => {
               <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/works" className="text-gray-400 hover:text-white transition-colors">Our Workshops</Link></li>
-              <li><Link to="/rep-eoi" className="text-gray-400 hover:text-white transition-colors">RFP</Link></li>
+              <li><Link to="/rep-eoi" className="text-gray-400 hover:text-white transition-colors">RFP/EOI</Link></li>
               <li><Link to="/join-us" className="text-gray-400 hover:text-white transition-colors">Join Us</Link></li>
             </ul>
           </div>
@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-gray-400" />
-                <span className="text-gray-400 text-sm">TF, 3rd Floor, Pearl Omaxe Tower, Netaji Subhash Place, New Delhi - 110034</span>
+                <span className="text-gray-400 text-sm">3rd Floor, POT, Netaji Subhash Place, New Delhi - 110034</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-gray-400" />

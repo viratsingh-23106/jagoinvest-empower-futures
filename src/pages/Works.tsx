@@ -61,21 +61,21 @@ const Works = () => {
     {
       title: "Rural Financial Literacy Workshop",
       location: "Uttar Pradesh & Bihar",
-      date: "January 2024",
+      date: "July 2025",
       participants: "2,000+ farmers and rural entrepreneurs",
       description: "Focused on agricultural investment schemes and rural banking awareness."
     },
     {
       title: "Youth Investment Awareness Workshop",
       location: "Delhi & NCR",
-      date: "March 2024",
+      date: "August 2025",
       participants: "1,500+ college students",
       description: "Introduction to mutual funds, SIPs, and digital investment platforms."
     },
     {
       title: "Senior Citizen Financial Security Workshop",
       location: "Mumbai & Pune",
-      date: "May 2024",
+      date: "September 2025",
       participants: "800+ senior citizens",
       description: "Focus on pension schemes, health insurance, and fraud prevention."
     }
