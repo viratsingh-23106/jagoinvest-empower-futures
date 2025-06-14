@@ -215,10 +215,6 @@ const Home = () => {
               </span>
               <div className="h-px w-8 bg-gradient-to-l from-transparent to-blue-500"></div>
             </div>
-<<<<<<< HEAD
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              AFFILIATION <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">&</span> PARTNERS
-=======
             
             <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
               AFFILIATION 
@@ -227,7 +223,6 @@ const Home = () => {
                 <Sparkles className="absolute -top-2 -right-2 h-6 w-6 text-yellow-500 animate-pulse" />
               </span> 
               Partners
->>>>>>> 9c1d0d92456d7648df2f62780a6eda00fb424d0c
             </h2>
             
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
