@@ -234,9 +234,9 @@ const Home = () => {
                 {partners.map((partner, index) => (
                   <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
                     <div className="p-2">
-                      <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1">
-                        <CardContent className="p-8 h-48 flex flex-col">
-                          <div className="flex-1 flex items-center justify-center mb-6">
+                      <Card className="bg-white border-2 border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 hover:border-blue-200 relative overflow-hidden">
+                        <CardContent className="p-8 h-48 flex flex-col relative">
+                          <div className="flex-1 flex items-center justify-center mb-4">
                             <div className="w-full h-32 bg-white rounded-lg border border-gray-50 p-6 flex items-center justify-center overflow-hidden">
                               <img
                                 src={partner.logo}
@@ -261,10 +261,14 @@ const Home = () => {
                               />
                             </div>
                           </div>
-                          <div className="text-center">
-                            <p className="text-sm font-semibold text-gray-700 group-hover:text-blue-700 transition-colors duration-300 leading-tight">
-                              {partner.name}
-                            </p>
+                          
+                          {/* Partner name - visible on hover, positioned inside the card */}
+                          <div className="absolute inset-x-0 bottom-4 px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div className="text-center bg-white/95 backdrop-blur-sm rounded-lg py-2 px-3 shadow-sm border border-gray-100">
+                              <p className="text-sm font-semibold text-gray-700 leading-tight">
+                                {partner.name}
+                              </p>
+                            </div>
                           </div>
                         </CardContent>
                       </Card>
