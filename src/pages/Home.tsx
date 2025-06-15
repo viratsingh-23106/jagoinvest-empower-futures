@@ -217,7 +217,7 @@ const Home = () => {
             </div>
             
             <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-              AFFILIATION 
+              Affiliation
               <span className="relative mx-4">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">&</span>
                 <Sparkles className="absolute -top-2 -right-2 h-6 w-6 text-yellow-500 animate-pulse" />
