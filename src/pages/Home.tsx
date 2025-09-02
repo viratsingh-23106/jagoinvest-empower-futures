@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import AIDoctorChatbot from "@/components/home/AIDoctorChatbot";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -199,6 +200,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* AI Doctor Chatbot Section */}
+      <AIDoctorChatbot />
 
       {/* Enhanced Our Partners Section with improved elegance and professionalism */}
       <section className="py-32 bg-gradient-to-b from-slate-50/50 via-white to-blue-50/30 relative overflow-hidden">
